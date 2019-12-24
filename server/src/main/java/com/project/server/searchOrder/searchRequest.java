@@ -2,15 +2,11 @@ package com.project.server.searchOrder;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 
-@Entity
+
+
 public class searchRequest {
-    @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+
     @JsonProperty(value="num")
     private String num;
     @JsonProperty(value = "name")
